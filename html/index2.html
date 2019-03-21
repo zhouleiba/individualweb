@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Zhoule's life</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="../css/main.css" />
+<link rel="shortcut icon" href="../images/panda.png" type="image/x-icon">
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_1066448_7da4zgpp9c6.css">
+</head>
+<body>
+<!-- transition:delay 过渡效果 主要是js -->
+<!-- Header -->
+<header id="header" class="alt">
+	<div class="inner">
+			<audio src="../music/DJ OKAWARI - Luv Letter.mp3" id="aud"></audio>
+			<img src="../images/bofang3.png" class="bofang" id="playpause" />
+			<script type="text/javascript">
+			var aud = document.getElementById("aud");
+			var img = document.getElementById("playpause");
+			img.onclick = function() {
+				if (aud.paused) {
+					aud.play();
+				} else {
+					aud.pause();
+				}
+			}
+			aud.addEventListener("play", function (e) {
+				img.src="../images/zanting3.png";
+			}, false);
+			aud.addEventListener("pause", function (e) {
+				img.src="../images/bofang3.png";
+			}, false);
+			</script>
+		<h1>认真生活</h1>
+		<p>积极 努力 不馁 豁达</p>
+	</div>
+</header>
+	
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Banner -->
+		<section id="intro" class="main">
+			<span class="icon fa-diamond major"></span>
+			<h2>生 活 需 要 仪 式 感</h2>
+			<p>我喜欢旅游，或是喧闹繁荣的城市，或是宁静清新的小镇，旅游可以充实自己的生活，增长自己的见识。<br>
+			   我喜欢玩密室逃脱，通过自己的逻辑，发挥自己的想象力，破解迷关，成就感满满。<br>
+			   我喜欢逛各种小店，看许多有趣的小东西，手工艺品承载着文化和智慧，像是古今文化交流最好的信物。
+			   <br>我喜欢装饰自己的小天地，我总想着某天有了自己的房间，要把它装饰的简单、温暖、有格调。</p>
+		</section>
+
+		<section class="main items">
+			<article class="item">
+				<header>
+					<a href="#"><img src="../images/pw45.jpg" alt="" /></a>
+					<h3>成 都</h3>
+				</header>
+				<p>锦里，好吃的非常多，夜景很有特色。<br>
+				 宽窄巷子，在成都必去的景点。<br>
+			     大熊猫基地，圆滚滚的大熊猫，白白净净的熊猫宝宝，好想抱一只回家养，太萌啦。<br>
+				</p>
+				
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="../images/pw46.jpg" alt="" /></a>
+					<h3>重 庆</h3>
+				</header>
+			<p>	洪崖洞，去的时候除了人多没有别的缺点了。<br>
+				解放碑，重庆地标，许多品牌店和美食。<br>
+				奥陶纪公园，玻璃桥有点吓人，景点居高，一些娱乐项目还是蛮惊险刺激的。<br>
+			</p>
+			
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="../images/pw47.jpg" alt="" /></a>
+					<h3>伊 犁</h3>
+				</header>
+				<p>
+					赛里木湖，确实是我所去过最美最纯净的地方。<br>
+					薰衣草庄园，世界第二大，花开季直接拍出桌面壁纸。<br>
+					霍尔果斯口岸，与哈萨克斯坦接壤，去观景台瞄了一眼邻国就进免税店买了包巧克力。
+				</p>
+				
+			</article>
+			<article class="item">
+				<header>
+					<a href="#"><img src="../images/pw44.jpg" alt="" /></a>
+					<h3>嘉 峪 关</h3>
+				</header>
+				<p>天下雄关，城楼城墙确实气势凛凛。<br>
+				  长城，登到长城最高处，不容易但很有成就感。<br>
+				方特，虽然去的时间不凑巧，没玩什么游乐设施，但人生处处有惊喜，才是旅途的乐趣。</p>
+				
+			</article>
+		</section>
+
+	<!-- CTA -->
+		<section id="cta" class="main special">
+			<h2>生 活 需 要 有 自 己 的 态 度</h2>
+			<p>不 忘 初 心 <br>
+			不 缺 勇 气 <br>
+			不 失 乐 趣 </p>
+			<ul class="actions">
+				<li><a href="#" class="button big">回 到 顶 部</a></li>
+			</ul>
+			<ul class="actions">
+					<li><a href="../index.html" class="button big">回 到 首 页</a></li>
+				</ul>
+		</section>
+
+</div>
+
+<!-- Scripts -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/skel.min.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

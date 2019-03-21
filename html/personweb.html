@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="../css/personweb.css">
+    <link rel="shortcut icon" href="../images/panda.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1066448_7da4zgpp9c6.css">
+    <title>Zhoulei's personal web</title>
+</head>
+
+<body>
+
+       
+    <div class="top">
+        <p>♔  Zhou Lei's Personal Web Page </p>
+        <audio src="../music/Silent Siren - secret base~君がくれたもの~.mp3
+        " id="aud"></audio>
+        <img src="../images/bofang2.png" class="bofang" id="playpause" />
+        <script type="text/javascript">
+        var aud = document.getElementById("aud");
+        var img = document.getElementById("playpause");
+        img.onclick = function() {
+            if (aud.paused) {
+                aud.play();
+            } else {
+                aud.pause();
+            }
+        }
+        aud.addEventListener("play", function (e) {
+            img.src="../images/zanting2.png";
+        }, false);
+        aud.addEventListener("pause", function (e) {
+            img.src="../images/bofang2.png";
+        }, false);
+        </script>
+
+    </div>
+    <div class="sec">
+      <div class="photo">
+          <!-- transform：scale 缩放 -->
+        <div class="wrap">
+                <img src="../images/pw2.jpg" alt="">
+                <h2>Hello,</h2>
+                <p>My name's ZhouLei</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="next"> </div>
+    <div class="wordfir">
+        <h2>Birthday</h2>
+        <p>一九九八年九月二十九日</p>
+        <a href="">我还要一个人走很长很长的路<br>
+             但我告诉自己<br>
+             风来自很远的地方<br>
+             去去也无妨</a>
+    </div>
+    <div class="photo2"> </div>
+    <div class="wordsec">
+            <h2>Hobby</h2>
+            <p>旅游 桌游 电影 密室逃脱</p>
+            <a href="">
+                夕阳几点余温将天空涂成玫红色<br>
+                远山现两三点漂浮的云
+            </a>
+    </div>
+
+    <div class="shop-right">
+            <div class="banner">
+                <img src="../images/pw14.jpg" alt="">
+                <img class="banner4" src="../images/pw15.jpg" alt="">
+                <img class="banner3" src="../images/pw16.jpg" alt="">
+                <img class="banner2" src="../images/pw19.jpg" alt="">
+                <img class="banner1" src="../images/pw18.jpg" alt="">
+                <button id="prev"></button>
+                <button id="next"></button>
+                <div class="b-button">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+            </div>
+            <!-- js  -->
+            <script>
+                var index = 0;
+                $("#next").click(function () {
+                    index++;
+                    console.log(index);
+                    if (index > 4) {
+                        index = 0;
+                    }
+                    bannerAnimate(index);
+                    console.log(index);
+                })
+                $("#prev").click(function () {
+                    index--;
+                    console.log(index);
+                    if (index < 0) {
+                        index = 4;
+                    }
+                    bannerAnimate(index);
+                    console.log(index);
+                })
+                $(".b-button span").click(function () {
+                    var currentIndex = $(this).index();
+                    bannerAnimate(currentIndex);
+                    index = currentIndex;
+                })
+                function bannerAnimate(index) {
+                    $(".banner>img").eq(index).fadeIn().siblings("img").fadeOut();
+                    $(".b-button>span").eq(index).addClass("active").siblings().removeClass("active");
+                }
+            </script>
+            <h2>Scenery</h2>
+            <p class="wordthrd">赛里木湖</p>
+            <p class="wordfor">在这个光怪陆离的人间<br>
+                没有谁将日子过得行云流水<br>
+                但我始终相信<br>
+                走过平湖烟雨 岁月山河<br>
+                那些历尽劫数 尝遍百味的人<br>
+                会更加生动而干净<br>
+            </p>
+       </div>
+       
+
+   <div class="product">
+        <div class="work-title">
+                <p>作品展示</p>
+        </div>
+
+       <div class="third">
+           <h2>Click ☞</h2>
+          <a href="../html/homework02.html"><img src="../images/pw7.jpg" alt=""></a>
+        </div>
+
+        <div class="forth">
+          <a href="../html/homework03.html"><img src="../images/pw11.jpg" alt=""></a>
+        </div>
+
+        <div class="fifth">
+            <a href="../html/homework04.html"><img src="../images/pw4.jpg" alt=""></a>
+        </div>
+
+        <div class="sixth">
+            <a href="../html/homework05.html"><img src="../images/pw9.jpg" alt=""></a>
+        </div>
+
+        <div class="seventh">
+            <a href="../html/homework06.html"><img src="../images/pw10.jpg" alt=""></a>
+        </div>
+
+        <div class="eighth">
+            <a href="../html/homework07.html"><img src="../images/pw12.jpg" alt=""></a>
+        </div>
+
+        <div class="nineth">
+            <a href="../html/homework08.html"><img src="../images/pw13.jpg" alt=""></a>
+        </div>
+
+        <div class="tenth">
+            <a href="../html/homework09.html"><img src="../images/pw8.jpg" alt=""></a>
+        </div>
+   </div>
+    <div class="bottom-line"></div>
+
+   <div class="wordfif">
+      <h2 class="school">College</h2>
+      <img src="../images/pw39.gif" alt="">
+      <p>武汉工程大学</p>
+      <h2 class="major">Major</h2>
+      <span>软件工程专业</span>
+   </div>
+
+   <div class="Fav">
+     <p class="wordsix">
+        About<br>My<br>Favorite
+     </p>
+     <p class="fruit"> Fruit : 草莓</p>
+     <img src="../images/pw33.gif" class="photo3" alt="">
+
+     <p class="movie"> Movie : 哈利波特</p>
+     <img src="../images/pw34.gif"  class="photo4" alt="">
+
+     <p class="book">Book : 小王子</p>
+     <img src="../images/pw35.gif" class="photo5" alt="">
+
+     <p class="entertainment">Entertainment : 密室逃脱</p>
+     <img src="../images/pw36.gif" class="photo6" alt="">
+
+     <p class="place">Place : 新疆</p>
+     <img src="../images/pw37.gif" class="photo7" alt="">
+
+     <p class="animal">Animal : 小金毛</p>
+     <img src="../images/pw38.gif" class="photo8" alt="">
+   </div>
+   <div class="last">
+       <p>
+        每 个 人 一 生 中 都 会 遇 到 许 多 人 和 事 ，<br>
+        我 们 虽 然 无 法 预 知 ，<br>
+        但 时 间 会 告 诉 你 ，<br>
+        谁 是 你 生 命 中 的 过 客 ，<br>
+        谁 是 你 生 命 中 的 永 恒 。</p>
+   </div>
+   <div>
+       <a href="../html/index2.html"><button class="la-button">我 的 生 活 ...</button></a>
+   </div>
+</body>
+</html>

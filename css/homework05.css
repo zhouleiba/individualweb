@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #f7f7f7;
+    font-family:arial;
+}
+.head{
+    height: 113px;
+    background-color: #18bebe;
+    border:1px solid #18bebe;
+}
+.headcontent{
+    height: 41px;
+    background-color: #efefef;
+    margin-top:15px;
+    border:1px #efefef;
+}
+.con-inner{
+    width: 973px;
+    margin:0 auto;
+    padding:0px 18px 10px 19px;
+}
+.adress{
+    width: 125px;
+    height: 41px;
+    position:relative;
+    float:left;
+}
+a{
+    text-decoration:none;
+    color: rgb(148, 148, 148);
+}
+.con-mid {
+   margin-left :210px;
+   float:left;
+   width: 380px;
+   height: 17px;
+   padding:12px 0;
+}
+.con-mid a{
+    margin-right:59px;
+}
+.con-right{
+    float:right;
+    width: 84px;
+    position:relative;
+}
+li{
+    list-style:none;
+}
+.head img{
+    display:block;
+    margin:15px auto 0;
+}
+.con-inner .adress img{
+    margin-right:12px;
+    display:inline-block;
+}
+.adress a{
+    font-size:14px;
+    display:inline-block;
+    position:absolute;
+    bottom:8px;
+}
+.con-right img{
+    margin:9px 0 14px 0;
+}
+.con-right a{
+   position:absolute;
+   right:0px;
+   bottom:13px;
+   font-size:16px;
+}
+.headcontent a:hover{
+    color:#18bebe;
+}
+.bod{
+    width: 1000px;
+    margin:0 auto; 
+}
+.tab{
+    height: 68px;
+    color:#393b3f;
+    font-size:18px;
+    margin-left: 0px;
+    margin-right: 400px;
+    margin-top: 20px;
+    margin-bottom: -25px;
+}
+.squa,.aside{
+    background-color: #ebebeb;
+}
+.tab a{
+    display:inline;
+    margin:30px 10px 20px 10px;
+}
+.squa{
+    height: 170px;
+    border:1px solid #e3e3df;
+}
+.title{
+    color:#18bebe;
+}
+.squa ul{
+    height: 17px;
+    margin-top: 20px;
+    margin-left:15px;
+}
+.squa li{
+    float:left;
+    margin-right:30px;
+    border:2px solid #ebebeb;
+}
+.squa li:hover{
+    border:2px solid orange;
+    cursor:pointer;
+    background: #fff;
+}
+.icon-zelvxuanzefeiyongdaosanjiaoxingfandui{
+       color:#515151;
+       margin-left:-21px;
+}
+.secsqua{
+    height: 58px;
+    margin-top:20px;
+    border:1px solid #e3e3df;
+    position:relative;
+}
+.list{
+    margin-left:15px;
+    margin-top:20px;
+}
+.secsqua form{
+    height: 20px;
+    border:1px solid #e3e3df;
+    width: 250px;
+    position:absolute;
+    right:400px;
+    bottom: 20px;
+    background-color: white;
+}
+.secsqua input{
+    height: 20px;
+    width: 190px;
+    border:none;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.secsqua button{
+    height: 20px;
+    line-height:20px;
+    border:none;
+    background-color: white;
+    position:absolute;
+    right:10px;
+    bottom:0;
+}
+.question{
+    position:absolute;
+    color:#18bebe;
+    right:28px;
+    bottom:18px;
+}
+.container{
+    height: 720px;
+}
+.contop .conright1,.contop .conright2{
+    margin-right:0;
+}
+.contop div{
+     height: 311px;
+     width: 206px;
+     background-color:#e7e7e7 ;
+     margin-top:20px;
+     margin-right:18px;
+     float:left;
+     border:2px solid #dfdfdf;
+     padding:15px 13px 15px 13px;
+}
+.contop img{
+    margin-bottom:15px;
+}
+.contop p{
+    color:#393b3f;
+    line-height:20px;
+}
+.contop h3{
+    color:#18bebe;
+    margin-top:11px;
+    display:inline-block;
+} 
+.contop span{
+    color:#18bebe;
+}
+.contop p:hover,h3:hover,span:hover{
+    color:#feb02c;
+}
+.menu{
+    height: 35px;
+    margin:30px 0;
+}
+.page{
+    width: 116px;
+    height: 33px;
+    background-color: #eee;
+    text-align: center;
+    line-height:33px;
+    float:left;
+    margin:1px 0;
+}
+.number{
+    color:#393b3f;
+    float:left;
+    margin:10px 38px;
+}
+.number a{
+    margin-right:11px;
+    font-size:18px;
+}
+.number a:hover{
+    color:#feb02c;
+    text-decoration: underline;
+}
+.number .tail{
+    margin-right:0;
+    display:inline-block;
+}
+.menu form{
+    width: 313px;
+    height: 35px;
+    float:left;
+    line-height:35px;
+    margin-left:37px;
+    position:relative;
+}
+.menu input{
+    height: 28px;
+    width: 28px;
+    border:2px solid #515151;
+    margin:0 13px 0 13px;
+}
+.menu button{
+    height: 35px;
+    width: 65px;
+    color:white;
+    background-color: #ffa700;
+    position:absolute;
+    right:0;
+    bottom:0;
+    border:none;
+    font-size:17px;
+}
+.wordfir{
+    height: 85px;
+    margin-bottom:30px;
+}
+.wordfir img{
+    margin-left:16px;
+    float:left;
+
+}
+.alert{
+    float:left;
+    margin-left:16px;
+}
+p{
+    font-size:16px;
+    line-height:22px;
+}
+.test{
+    color:#18bebe;
+    margin:6px 0 12px 0;
+    font-size:19px;
+}
+.foot{
+    height: 218px;
+    background-color: #515151;
+    border:1px solid #515151;
+}
+.in {
+    width: 1000px;
+    margin:0 auto;  
+}
+.intop{
+    margin:25px 124px 29px 16px;
+    height: 123px;
+    width: 862px;
+}
+.inleft{
+    width: 474px;
+    float:left;
+}
+.inleft img{
+    margin-bottom:14px;
+}
+.inleft p{
+    line-height:22px;
+    font-size:13px;
+    color:#d3d3d3;
+}
+.inleft .first{
+    color:white;
+}
+.link{
+    width: 388px;
+    height: 84px;
+    margin-top:34px;
+    float:left;
+}
+.link a{
+    color:#d3d3d3;
+    font-size:11px;
+}
+.inmid{
+    margin:10px 80px 0 0;
+    float:left;
+    width: 44px;
+    height: 73px;
+}
+.mid{
+    display:block;
+    margin:10px 0;
+}
+.inright{
+    height: 84px;
+    width: 96px;
+    float:left;
+    margin-left: 44px;
+} 
+.up{
+   height: 30px;
+   position:relative;
+}
+.up img{
+    position:absolute;
+   left:0;
+   top:8px;
+}
+.up a{
+    position:absolute;
+    right:13px;
+    bottom: 1px;
+}
+.skycat{
+   height: 26px;
+   position:relative;
+}
+.skycat img{
+    position:absolute;
+   top:4px;
+   left:4px;
+}
+.skycat a{
+    position:absolute;
+    right:1px;
+    bottom: 1px;
+}
+.inbot{
+    height: 26px;
+    position:relative;
+ }
+ .inbot img{
+     position:absolute;
+    top:5px;
+    left:4px;
+ }
+ .inbot a{
+     position:absolute;
+     right:12px;
+     bottom: 0px;
+ }
+.wordsec hr{
+    border: 1px solid #6f7273;
+}
+.wordsec p {
+    margin: 15px 0 0 17px;
+    color: #c5c6c5;
+    float: left;
+    font-size:13px;
+}
+
+.syb {
+    margin: 15px 17px 0 0;
+    color: #c5c6c5;
+    float: right;
+    font-size:13px;
+}

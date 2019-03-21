@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米商城</title>
+    <link rel="stylesheet" href="../css/homework08.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1066448_7da4zgpp9c6.css">
+
+</head>
+<body>
+    <div class="top">
+        <div class="wordone">
+            <a href="#">小米网<span>|</span></a>
+            <a href="#">MIUI<span>|</span></a>
+            <a href="#">米聊<span>|</span></a>
+            <a href="#">游戏<span>|</span></a>
+            <a href="#">多看阅读<span>|</span></a>
+            <a href="#">云服务<span>|</span></a>
+            <a href="#">小米移动版<span>|</span></a>
+            <a href="#">Select region<span>|</span></a>
+            <a href="#">米粉节答疑</a>
+            <a href="#" class="signup">注册<span>|</span></a>
+            <a href="#">登录</a>
+        </div>
+    </div>
+
+    <div class="second">
+        <a href="https://www.mi.com/index.html">
+        <img src="../images/milogo.png" class="img-fir"></a>
+    </div>
+
+    <div class="clock">
+        <img src="../images/clock.png" alt="">
+        <p>4月14日开放购买</p>
+
+    </div>
+    <div class="shopping">
+            <a href="#"><img src="../images/shopcar.png" alt=""><p>购物车</p></a>
+    </div>
+
+    <div  class="form">
+        <form>
+            <input type="text" name="input" id="search" style="font-size:11px" placeholder="搜索您需要的商品"></input>
+        </form>
+        <div id="nav">
+            <ul id="ul">
+                <a href="#"><li>小米手环</li></a>
+                <a href="#"><li>耳机音箱</li></a>
+                <a href="#"><li class="protect">保护壳</li></a>
+            </ul>
+        </div>
+        <div id="glass">
+            <a href="#"><img src="../images/fangdajing.png" alt="" class="iconfir"></a>
+        </div>
+    </div>
+
+    <div>
+        <div class="block">
+            <ul>
+                <li class="display"><a href="">全部商品分类</a></li>
+                <li class="one"><a href="">首页</a></li>
+                <li class="two"><a href="">小米手机</a></li>
+                <li class="three"><a href="">红米</a></li>
+                <li class="four"><a href="">小米平板</a></li>
+                <li class="five"><a href="">小米电视</a></li>
+                <li class="six"><a href="">盒子</a></li>
+                <li class="seven"><a href="">路由器</a></li>
+                <li class="eight"><a href="">合约机</a></li>
+                <li class="nine"><a href="">服务</a></li>
+                <li class="ten"><a href="">社区</a></li>
+            </ul>
+        </div>
+
+        <div class="buy">
+            <ul>
+                <li>
+                    <p>购买手机</p>
+                    <a href="">小米Note</a>
+                    <a href="">小米4</a>
+                    <a href="">红米</a>
+                    <a href="">红米Note</a>
+                </li>
+                <li>
+                    <p>购买电视与平板</p>
+                    <a href="">小米电视</a>
+                    <a href="">小米盒子</a>
+                    <a href="">小米平板</a>
+                </li>
+                <li>
+                    <p>路由器与智能硬件</p>
+                    <a href="">路由器</a>
+                    <a href="">体重秤</a>
+                    <a href="">净化器与滤芯</a>
+                </li>
+                <li>
+                    <p>插线板、移动电源与电池</p>
+                    <a href="">小米移动电源</a>
+                    <a href="">电池</a>
+                    <a href="">充电器</a>
+                </li>
+                <li>
+                    <p>耳机音箱与储存卡</p>
+                    <a href="">小米头戴式耳机</a>
+                    <a href="">小米活塞耳机</a>
+                </li>
+                <li>
+                    <p>保护套与贴膜</p>
+                    <a href="">保护套/保护壳</a>
+                    <a href="">贴膜</a>
+                    <a href="">防尘塞</a>
+                </li>
+                <li>
+                    <p>后盖与个性化配件</p>
+                    <a href="">米键</a>
+                    <a href="">后盖</a>
+                    <a href="">贴纸</a>
+                    <a href="">手机支架</a>
+                </li>
+                <li>
+                    <p>小米生活方式</p>
+                    <a href="">服装</a>
+                    <a href="">米兔</a>
+                    <a href="">背包</a>
+                    <a href="">生活周边</a>
+                </li>
+            </ul>
+
+            <div class="shop-right">
+                    <div class="banner">
+                        <img src="../images/banner5.png" alt="">
+                        <img class="banner4" src="../images/banner4.png" alt="">
+                        <img class="banner3" src="../images/banner3.png" alt="">
+                        <img class="banner2" src="../images/banner2.png" alt="">
+                        <img class="banner1" src="../images/banner1.png" alt="">
+                        <button id="prev"></button>
+                        <button id="next"></button>
+                        <div class="b-button">
+                            <span class="active">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                    </div>
+                    <script>
+                        var index = 0;
+                        $("#next").click(function () {
+                            index++;
+                            console.log(index);
+                            if (index > 4) {
+                                index = 0;
+                            }
+                            bannerAnimate(index);
+                            console.log(index);
+                        })
+                        $("#prev").click(function () {
+                            index--;
+                            console.log(index);
+                            if (index < 0) {
+                                index = 4;
+                            }
+                            bannerAnimate(index);
+                            console.log(index);
+                        })
+                        $(".b-button span").click(function () {
+                            var currentIndex = $(this).index();
+                            bannerAnimate(currentIndex);
+                            index = currentIndex;
+                        })
+                        function bannerAnimate(index) {
+                            $(".banner>img").eq(index).fadeIn().siblings("img").fadeOut();
+                            $(".b-button>span").eq(index).addClass("active").siblings().removeClass("active");
+                        }
+                    </script>
+                    <div class="small">
+                        <a href=""><img src="../images/01.png" alt=""></a>
+                        <a href=""><img src="../images/02b.png" alt=""></a>
+                        <a href=""><img src="../images/03.png" alt=""></a>
+                    </div>
+            </div>
+    </div>
+    <div class="star">
+            <p class="star-p">
+                <span class="p-left">小米明星单品</span>
+                <span>根据机型选配件</span>
+                <div class="p-right">
+                    <div class="pr-left">
+                        <img src="../images/05.png" alt="">
+                    </div>
+                    <div class="pr-right">
+                        <img src="../images/06.png" alt="">
+                    </div>
+                </div>
+            </p>
+            <div class="production">
+                <a href="">
+                    <img src="../images/T1PxJvBCAT1RXrhCrK!220x220.jpg" class="photo1" alt="">
+                    <p class="p-left">小米智能插座</p>
+                    <span>让普通家电变得智能</span>
+                </a>
+                <a href=""> <img src="../images/T1XYxTBsAT1RXrhCrK!220x220.jpg" alt="">
+                    <p class="p-left">小米空气净化器</p>
+                    <span>高性能智能空气净化器立即预约</span>
+                </a>
+                <a href=""> <img src="../images/T1y0JTBy_T1RXrhCrK!220x220.jpg" alt="">
+                    <p class="p-left">小米活塞耳机简装版</p>
+                    <span>好声音源自活塞式音腔，延续经典设计</span>
+                </a>
+                <a class="pro-right" href=""> <img src="../images/aa.jpg" alt="">
+                    <p class="p-left">小米路由器</p>
+                    <span>顶级双屏AC智能路由器，内置1TB大硬盘</span>
+                </a>
+            </div>
+    </div>
+
+        <div class="new">
+            <span class="colorsec">新品上架</span>
+            <span class="more">更多></span>
+            <div class="new-left">
+                <div class="new-top">
+                    <div class="fanghezi"><img src="../images/fanghezi0407xiao.jpg" alt=""></div>
+                    <div class="shouhuan">
+                        <span class="colorsec">
+                            <p>小米手环</p>
+                            <p>79元</p>
+                        </span>
+                        <img src="../images/T1qaVvB7CT1RXrhCrK!220x220.jpg" alt="">
+                    </div>
+                </div>
+                <div class="new-mid">
+                    <div class="nm-left">
+                        <div class="diaoshi">
+                            <span class="colorsec">
+                                <p>五周年米兔钥匙扣</p>
+                                <p>9.9元</p>
+                            </span><img src="../images/T1TfAgB4KT1RXrhCrK!220x220.jpg" alt=""></div>
+                        <div class="lanya">
+                            <span class="colorsec">
+                                <p>QCY派Q8蓝牙耳机</p>
+                                <p>59.9元</p>
+                            </span><img src="../images/T1SrKTBmWT1RXrhCrK!220x220.jpg" alt=""></div>
+                    </div>
+                    <div class="yifu">
+                        <span class="colorsec">
+                            <p>小米T恤路标MILOGO</p>
+                            <p>39元</p>
+                        </span><img src="../images/T1crEgBCYT1RXrhCrK!220x220.jpg" alt=""></div>
+                    <div class="shimu">
+                        <span class="colorsec">
+                            <p>小米4实木后盖</p>
+                            <p>69元</p>
+                        </span><img src="../images/T12qZvB7CT1RXrhCrK!220x220.jpg" alt=""></div>
+                </div>
+                <div class="new-bottom">
+                    <div class="baohuke">
+                        <span class="colorsec">
+                            <p>小米Note超薄保护壳</p>
+                            <p>49元</p>
+                        </span><img src="../images/baohuke.png" alt=""></div>
+                    <div class="zipaigan">
+                        <span class="colorsec">
+                            <p>小米自拍杆</p>
+                            <p>49元</p>
+                        </span><img src="../images/T1DrL_B4CT1RXrhCrK!220x220.jpg" alt=""></div>
+                    <div class="erji">
+                        <span class="colorsec">
+                            <p>先锋CL31系列耳式耳机</p>
+                            <p>99元</p>
+                        </span><img src="../images/T1GXxvBsET1RXrhCrK!220x220.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="new-right">
+                <div class="nr-top">
+                    <p class="special">特价商品</p>
+                    <p class="word">SanDisk32GB存储卡</p>
+                    <p class="price"><span class="yuancolor">79元</span><del>109元</del></p>
+                    <p class="more">还有更多特价商品</p>
+                    <img src="../images/cunchuka-1.png" alt="">
+                </div>
+                <div class="nr-toptwo">
+                    <p class="first">特惠配件套餐</p>
+                    <p class="colorsec">手机必备配件组合购买</p>
+                    <p class="colorthird">实惠更优惠</p>
+                    <img src="../images/channel-list-cool.jpg" alt="">
+                </div>
+                <div class="nr-toptwo">
+                    <p class="first">我爱酷玩</p>
+                    <p class="colorfor">邂逅炫酷的电子产品</p>
+                    <p class="colorfif">结交趣味相投的朋友</p>
+                    <img src="../images/channel-list-new.jpg" alt="">
+                </div>
+                <div class="nr-search">
+                    <p class="come">企业用户采购通道<i class="iconfont icon-dayuhao"></i></p>
+                    <hr />
+                    <p class="colorsec">小米手机防伪查询<i class="iconfont icon-dayuhao"></i></p>
+                    <hr />
+                    <p class="colorsec">小米手机官翻版<i class="iconfont icon-dayuhao"></i></p>
+                    <hr />
+                    <p class="colorsec">小米路由器官翻版<i class="iconfont icon-dayuhao"></i></p>
+                    <hr />
+                    <p class="colorsec">米粉红包<i class="iconfont icon-dayuhao"></i></p>
+                    <hr />
+                </div>
+                <script>
+                    $(".nr-search p").click(function () {
+                        $(this).addClass("come").siblings().removeClass("come");
+                    })
+                </script>
+                <div class="money">
+                    <p class="recharge">话费充值</p>
+                    <input type="text" placeholder="请输入手机号">
+                    <select>
+                        <option select="selected" value="">100元</option>
+                        <option value="">50元</option>
+                        <option value="">30元</option>
+                    </select>
+                    <p class="final">实付价格98.4元起</p>
+                    <button>立即充值</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="bot-inner">
+        <div class="server">
+            <ul>
+                <li><a href="">
+                        <img src="../images/10.png" alt="">
+                        <p>1小时快修服务</p>
+                    </a></li>
+                <li><a href="">
+                        <img src="../images/11.png" alt="">
+                        七天无理由退货
+                    </a></li>
+                <li><a href="">
+                        <img src="../images/12.png" alt="">
+                        15天免费换货
+                    </a></li>
+                <li><a href="">
+                        <img src="../images/13.png" alt="">
+                        满150元包邮
+                    </a></li>
+                <li><a href="">
+                        <img src="../images/14.png" alt="">
+                        520余家售后网点
+                    </a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <dl>
+                <dt>帮助中心</dt>
+                <dd>购物指南</dd>
+                <dd>支付方式</dd>
+                <dd>配送方式</dd>
+            </dl>
+            <dl>
+                <dt>服务支持</dt>
+                <dd>售后政策</dd>
+                <dd>自动服务</dd>
+                <dd>相关下载</dd>
+            </dl>
+            <dl>
+                <dt>小米之家</dt>
+                <dd>小米之家</dd>
+                <dd>服务网店</dd>
+                <dd>预约亲临到店服务</dd>
+            </dl>
+            <dl>
+                <dt>关于小米</dt>
+                <dd>了解小米</dd>
+                <dd>加入小米</dd>
+                <dd>联系我们</dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd>新浪微博</dd>
+                <dd>小米部落</dd>
+                <dd>官方微信</dd>
+            </dl>
+            <div class="help">
+                <p class="phone">400-100-5678</p>
+                <p>周一至周日8：00-18：00</p>
+                <p>(仅收市话费)</p>
+                <button>24小时在线客服</button>
+            </div>
+
+        </div>
+        <div class="cooporation">
+            <p class="coo-top">
+                <span>小米旗下网站:</span>
+                <a href="">小米网</a>
+                <a href="">MIUI</a>
+                <a href="">米聊</a>
+                <a href="">多看书城</a>
+                <a href="">小米路由器</a>
+                <a href="">繁体香港</a>
+                <a href="">繁体台湾</a>
+                <a href="">English</a>
+                <a href="">小米后院</a>
+                <a href="">小米天猫店</a>
+                <a href="">小米淘宝直营店</a>
+                <a class="meng" href="">小米网盟</a>
+            </p>
+            <p>© mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802012456号 京网文[2014]0059-0009号 </p>
+            <p class="language">
+                <img src="../images/16.png" alt="">
+                <select name="" id="">
+                    <option select="selected" value="">简体</option>
+                    <option value="">日语</option>
+                    <option value="">韩语</option>
+                </select>
+
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
